@@ -8,18 +8,16 @@
 #define FN1 1
 
 &mmv {
-    acceleration-exponent = <1>;  
+    acceleration-exponent = <1>;
     time-to-max-speed-ms = <50>;
     delay-ms = 0;
-    
 };
 
-&mwh {    
-      acceleration-exponent = <1>;      // 0
-      time-to-max-speed-ms = <5000>;    // 40
-      delay-ms = <0>;                   // 10
+&mwh {
+    acceleration-exponent = <1>;      // 0
+    time-to-max-speed-ms = <5000>;    // 40
+    delay-ms = <0>;                   // 10
 };
-
 
 #define U_MOUSE_MOVE_MAX 1250       // 600
 #define U_MOUSE_SCROLL_MAX 100      // 10
@@ -30,47 +28,47 @@
 
         rgb_brightness_up {
             bindings = <&rgb_ug RGB_BRI>;
-            key-positions = <63 47 17>;
+            key-positions = <17 64 49>;
         };
 
         rgb_brightness_down {
             bindings = <&rgb_ug RGB_BRD>;
-            key-positions = <63 47 31>;
+            key-positions = <31 64 49>;
         };
 
         rgb_hue_up {
             bindings = <&rgb_ug RGB_HUI>;
-            key-positions = <63 35 17>;
+            key-positions = <35 17 64>;
         };
 
         rgb_hue_down {
             bindings = <&rgb_ug RGB_HUD>;
-            key-positions = <63 35 31>;
+            key-positions = <35 31 64>;
         };
 
         rgb_sat_up {
             bindings = <&rgb_ug RGB_SAI>;
-            key-positions = <63 20 17>;
+            key-positions = <20 17 64>;
         };
 
         rgb_sat_down {
             bindings = <&rgb_ug RGB_SAD>;
-            key-positions = <63 20 31>;
+            key-positions = <20 31 64>;
         };
 
         rgb_speed_up {
             bindings = <&rgb_ug RGB_SPI>;
-            key-positions = <63 17 25>;
+            key-positions = <17 25 64>;
         };
 
         rgb_speed_down {
             bindings = <&rgb_ug RGB_SPI>;
-            key-positions = <63 25 31>;
+            key-positions = <25 31 64>;
         };
 
         rgb_cycle {
             bindings = <&rgb_ug RGB_EFF>;
-            key-positions = <63 47>;
+            key-positions = <47 64>;
         };
     };
 
@@ -88,12 +86,12 @@
             // | Rotary | (<-- Rotary switch) ----------------------------------------------------------- 
 
             bindings = <
-&kp ESC    &kp N1    &kp N2    &kp N3  &kp N4     &kp N5     &kp N6     &kp N7  &kp N8         &kp N9     &kp N0    &kp MINUS  &kp EQUAL  &kp BSLH  &kp BSPC
+&kp GRAVE  &kp N1    &kp N2    &kp N3  &kp N4     &kp N5     &kp N6     &kp N7  &kp N8         &kp N9     &kp N0    &kp MINUS  &kp EQUAL  &kp BSLH  &kp BSPC
 &kp TAB    &kp Q     &kp W     &kp E   &kp R      &kp T      &kp Y      &kp U   &kp I          &kp O      &kp P     &kp LBKT   &kp RBKT   &kp BSLH
 &kp CLCK   &kp A     &kp S     &kp D   &kp F      &kp G      &kp H      &kp J   &kp K          &kp L      &kp SEMI  &kp SQT    &kp NUHS   &kp RET
 &kp LSHFT  &kp NUBS  &kp Z     &kp X   &kp C      &kp V      &kp B      &kp N   &kp M          &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT  &mo 1
 &kp LCTRL  &kp LGUI  &kp LALT  &mo 1   &kp SPACE  &kp SPACE  &kp SPACE  &mo 2   &kp LEFT_META  &kp RCTRL
-&kp C_PP
+&trans
             >;
         };
 
@@ -108,11 +106,11 @@
             // | Rotary | (<-- Rotary switch) ----------------------------------------------------------- 
 
             bindings = <
-&trans  &kp F1    &kp F2        &kp F3     &kp F4        &kp F5        &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &kp DEL
-&trans      &kp HOME  &kp UP        &kp END    &trans        &trans        &trans  &mwh SCROLL_UP  &mmv MOVE_UP   &mwh SCROLL_DOWN  &trans   &trans   &trans   &trans
-&trans      &kp LEFT  &kp DOWN      &kp RIGHT  &trans        &trans        &trans  &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &trans   &trans   &trans   &trans
-&trans      &trans    &trans        &trans     &trans        &trans        &trans  &trans  &trans  &trans  &trans   &trans   &trans   &trans
-&trans      &trans    &kp LEFT_ALT  &trans     &mkp RCLK  &mkp LCLK  &trans  &trans  &trans  &trans
+&kp ESCAPE  &kp F1    &kp F2        &kp F3     &kp F4     &kp F5     &kp F6  &kp F7          &kp F8          &kp F9            &kp F10          &kp F11  &kp F12  &trans  &kp DEL
+&trans      &kp HOME  &kp UP        &kp END    &trans     &trans     &trans  &mwh SCROLL_UP  &mmv MOVE_UP    &mwh SCROLL_DOWN  &kp PRINTSCREEN  &trans   &trans   &trans
+&trans      &kp LEFT  &kp DOWN      &kp RIGHT  &trans     &trans     &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &trans           &trans   &trans   &trans
+&trans      &trans    &trans        &trans     &trans     &trans     &trans  &trans          &trans          &trans            &trans           &trans   &trans   &trans
+&trans      &trans    &kp LEFT_ALT  &trans     &mkp RCLK  &mkp LCLK  &trans  &trans          &trans          &trans
 &kp C_PP
             >;
         };
