@@ -98,8 +98,6 @@
 &trans      &trans    &kp LEFT_ALT  &trans     &kp NUMBER_2  &kp NUMBER_1  &trans  &trans  &trans  &trans
 &kp C_PP
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         configuration {
@@ -109,17 +107,6 @@
 &bootloader  &trans        &trans           &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans       &trans        &rgb_ug RGB_TOG  &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans       &trans        &trans           &trans        &trans        &trans        &trans  &trans  &trans  &trans
-&trans
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans
             >;
         };
