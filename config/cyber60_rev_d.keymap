@@ -7,6 +7,15 @@
 
 #define FN1 1
 
+&mmv {    
+    time-to-max-speed-ms = <50>;
+};
+
+&mwh {    
+    acceleration-exponent=<1>;
+};
+
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -92,10 +101,10 @@
 
             bindings = <
 &sys_reset  &kp F1    &kp F2        &kp F3     &kp F4        &kp F5        &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &kp DEL
-&trans      &kp HOME  &kp UP        &kp END    &trans        &trans        &trans  &trans  &kp I   &trans  &trans   &trans   &trans   &trans
-&trans      &kp LEFT  &kp DOWN      &kp RIGHT  &trans        &trans        &trans  &kp J   &kp K   &kp L   &trans   &trans   &trans   &trans
+&trans      &kp HOME  &kp UP        &kp END    &trans        &trans        &trans  &trans  &mmv MOVE_UP   &trans  &trans   &trans   &trans   &trans
+&trans      &kp LEFT  &kp DOWN      &kp RIGHT  &trans        &trans        &trans  &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &trans   &trans   &trans   &trans
 &trans      &trans    &trans        &trans     &trans        &trans        &trans  &trans  &trans  &trans  &trans   &trans   &trans   &trans
-&trans      &trans    &kp LEFT_ALT  &trans     &kp NUMBER_2  &kp NUMBER_1  &trans  &trans  &trans  &trans
+&trans      &trans    &kp LEFT_ALT  &trans     &mkp RCLK  &mkp LCLK  &trans  &trans  &trans  &trans
 &kp C_PP
             >;
         };
