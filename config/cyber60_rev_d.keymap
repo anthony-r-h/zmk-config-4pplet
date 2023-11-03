@@ -15,12 +15,12 @@
 
 &mwh {
     acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <50>;    // 40
+    time-to-max-speed-ms = <0>;    // 40
     delay-ms = <0>;                   // 10
 };
 
-#define U_MOUSE_MOVE_MAX 1250       // 600
-#define U_MOUSE_SCROLL_MAX 100      // 10
+#define U_MOUSE_MOVE_MAX 2250       // 600
+#define U_MOUSE_SCROLL_MAX 50      // 10
 
 / {
     combos {
