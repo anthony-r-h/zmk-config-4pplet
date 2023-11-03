@@ -10,7 +10,7 @@
 &mmv {
     acceleration-exponent = <1>;
     time-to-max-speed-ms = <50>;
-    delay-ms = 0;
+    delay-ms = <0>;
 };
 
 &mwh {
