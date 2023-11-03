@@ -25,51 +25,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        rgb_brightness_up {
-            bindings = <&rgb_ug RGB_BRI>;
-            key-positions = <17 64 49>;
-        };
-
-        rgb_brightness_down {
-            bindings = <&rgb_ug RGB_BRD>;
-            key-positions = <31 64 49>;
-        };
-
-        rgb_hue_up {
-            bindings = <&rgb_ug RGB_HUI>;
-            key-positions = <35 17 64>;
-        };
-
-        rgb_hue_down {
-            bindings = <&rgb_ug RGB_HUD>;
-            key-positions = <35 31 64>;
-        };
-
-        rgb_sat_up {
-            bindings = <&rgb_ug RGB_SAI>;
-            key-positions = <20 17 64>;
-        };
-
-        rgb_sat_down {
-            bindings = <&rgb_ug RGB_SAD>;
-            key-positions = <20 31 64>;
-        };
-
-        rgb_speed_up {
-            bindings = <&rgb_ug RGB_SPI>;
-            key-positions = <17 25 64>;
-        };
-
-        rgb_speed_down {
-            bindings = <&rgb_ug RGB_SPI>;
-            key-positions = <25 31 64>;
-        };
-
-        rgb_cycle {
-            bindings = <&rgb_ug RGB_EFF>;
-            key-positions = <47 64>;
-        };
     };
 
     keymap {
@@ -130,7 +85,7 @@
             bindings = <
 &trans  &trans  &trans           &trans           &trans           &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRI  &rgb_ug RGB_SPD  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans           &trans           &trans           &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans           &trans           &trans           &trans           &trans  &trans  &trans  &trans
 &trans
