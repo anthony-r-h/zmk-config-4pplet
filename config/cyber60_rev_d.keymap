@@ -52,7 +52,7 @@
         };
 
         Middle-click {
-            bindings = <&mkp MCLK>;
+            bindings = <&mkp MB3>;
             key-positions = <60 61>;
         };
     };
