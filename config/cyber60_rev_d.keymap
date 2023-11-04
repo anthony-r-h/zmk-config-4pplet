@@ -8,7 +8,7 @@
 #define FN1 1
 
 &mmv {
-    acceleration-exponent = <2>;
+    acceleration-exponent = <1>;
     time-to-max-speed-ms = <300>;
     delay-ms = <0>;
 };
