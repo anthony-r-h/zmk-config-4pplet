@@ -50,6 +50,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
+
+        Middle-click {
+            bindings = <&kp F19>;
+            key-positions = <60 61>;
+        };
     };
 
     keymap {
@@ -86,13 +91,12 @@
             // | Rotary | (<-- Rotary switch) ----------------------------------------------------------- 
 
             bindings = <
-&kp ESCAPE  &kp F1    &kp F2        &kp F3     &kp F4     &kp F5     &kp F6  &kp F7          &kp F8          &kp F9            &kp F10          &kp F11  &kp F12  &trans  &kp DEL
-&trans     &mwh SCROLL_UP  &mmv MOVE_UP    &mwh SCROLL_DOWN     &trans     &trans     &trans  &kp HOME  &kp UP        &kp END  &kp PRINTSCREEN  &trans   &trans   &trans
-&trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &trans     &trans     &trans   &kp LEFT  &kp DOWN      &kp RIGHT    &trans           &trans   &trans   &trans
-&trans      &trans    &trans        &trans     &trans     &trans     &trans  &trans          &trans          &trans            &trans           &trans   &trans   &trans
-&trans      &trans    &kp LEFT_ALT      &mkp LCLK  &mkp RCLK   &trans  &trans  &trans          &trans          &trans
+&kp ESCAPE  &kp F1          &kp F2          &kp F3            &kp F4     &kp F5  &kp F6  &kp F7    &kp F8    &kp F9     &kp F10          &kp F11  &kp F12  &trans  &kp DEL
+&trans      &mwh SCROLL_UP  &mmv MOVE_UP    &mwh SCROLL_DOWN  &trans     &trans  &trans  &kp HOME  &kp UP    &kp END    &kp PRINTSCREEN  &trans   &trans   &trans
+&trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &trans     &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans           &trans   &trans   &trans
+&trans      &trans          &trans          &trans            &trans     &trans  &trans  &trans    &trans    &trans     &trans           &trans   &trans   &trans
+&trans      &trans          &kp LEFT_ALT    &mkp LCLK         &mkp RCLK  &trans  &trans  &trans    &trans    &trans
 &kp C_PP
-
             >;
         };
 
